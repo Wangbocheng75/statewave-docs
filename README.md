@@ -36,6 +36,7 @@ This repo contains the architecture docs, product specs, API contracts, and deve
 - [Default support docs memory pack](default-support-docs-pack.md) — the docs-only knowledge base shipped for out-of-the-box support agents
 - [Roadmap](roadmap.md)
 - [Development Conventions](dev/conventions.md)
+- [License](license.md) — Apache-2.0
 
 ## Community
 

@@ -10,7 +10,7 @@ Statewave is built in the open. This guide explains how the community works — 
 | **[GitHub Issues](https://github.com/smaramwbc/statewave/issues)** | Confirmed, reproducible bugs and concrete implementation tasks |
 | **Pull Requests** | Code, docs, and config changes (see [CONTRIBUTING.md](https://github.com/smaramwbc/statewave/blob/main/CONTRIBUTING.md)) |
 | **[security@statewave.ai](mailto:security@statewave.ai)** | Security vulnerabilities — never post these publicly. See [SECURITY.md](https://github.com/smaramwbc/statewave/blob/main/SECURITY.md) |
-| **[licensing@statewave.ai](mailto:licensing@statewave.ai)** | Commercial licensing, private terms, enterprise procurement |
+| **[licensing@statewave.ai](mailto:licensing@statewave.ai)** | Enterprise support contracts — SLA, indemnity, managed hosting, procurement (Apache-2.0 covers the code itself) |
 
 Rule of thumb: **if you can describe a clean reproduction or a concrete change, open an Issue or PR. Otherwise, start in Discussions.**
 

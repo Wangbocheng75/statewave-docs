@@ -2,11 +2,6 @@
 
 All notable changes to the Statewave workspace.
 
-## Unreleased
-
-### Changed
-- **Relicensed entire ecosystem to Apache-2.0.** The core `statewave` server moved from AGPL-3.0 (dual-licensed with the Statewave Commercial License) to permissive Apache-2.0. SDKs, connectors, bench, admin, docs, examples, and web are all Apache-2.0. The commercial-license track has been retired — Apache-2.0 already permits proprietary, hosted, and embedded use. Enterprise support contracts (SLA, indemnity, procurement) remain available via [licensing@statewave.ai](mailto:licensing@statewave.ai) as services agreements.
-
 ## v0.8.0 — Governance & Audit (2026-05-14)
 
 This release adds the governance layer that turns Statewave from "structured memory with provenance" into "structured memory with emitted, queryable, policy-governed accountability." Three components:
@@ -88,7 +83,6 @@ This release adds the governance layer that turns Statewave from "structured mem
 - **Docker Hub repo description sync** now succeeds via the OAT-scoped `DOCKERHUB_TOKEN`.
 
 ### Docs
-- New: dual licensing model published (AGPLv3 + Statewave Commercial License).
 - New: deployment sizing guide, capacity-planning checklist.
 
 ## v0.6.1 — Support-Agent Superiority (2026-04-29)

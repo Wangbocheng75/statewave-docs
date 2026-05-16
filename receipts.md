@@ -151,13 +151,13 @@ import { StatewaveClient } from "@statewavedev/sdk";
 
 const c = new StatewaveClient({ tenantId: "acme", apiKey: "..." });
 const bundle = await c.getContext({
-  subject_id: "user-42",
+  subjectId: "user-42",
   task: "What plan is the customer on?",
-  emit_receipt: true,
+  emitReceipt: true,
 });
-if (bundle.receipt_id) {
-  const receipt = await c.getReceipt(bundle.receipt_id);
-  console.log(receipt.output.context_hash);
+if (bundle.receiptId) {
+  const receipt = await c.getReceipt(bundle.receiptId);
+  console.log(receipt.output.contextHash);
 }
 ```
 

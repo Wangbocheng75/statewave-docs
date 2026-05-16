@@ -213,15 +213,15 @@ import { StatewaveClient } from "@statewavedev/sdk";
 
 const c = new StatewaveClient({ tenantId: "acme", apiKey: "..." });
 await c.setMemoryLabels({
-  memory_id: "mem-id-123",
-  sensitivity_labels: ["pii", "financial"],
+  memoryId: "mem-id-123",
+  sensitivityLabels: ["pii", "financial"],
 });
 const bundle = await c.getContext({
-  subject_id: "user-42",
+  subjectId: "user-42",
   task: "...",
-  caller_id: "agent-7",
-  caller_type: "support_agent",
-  emit_receipt: true,
+  callerId: "agent-7",
+  callerType: "support_agent",
+  emitReceipt: true,
 });
 ```
 

@@ -127,7 +127,7 @@ const sw = new StatewaveClient("http://localhost:8100");
 
 // Record a conversation
 const episode = await sw.createEpisode({
-  subject_id: "user-42",
+  subjectId: "user-42",
   source: "support-chat",
   type: "conversation",
   payload: {
@@ -167,19 +167,19 @@ print(f"Batch ingested: {result.episodes_created} episodes")
 ```typescript
 const result = await sw.createEpisodesBatch([
   {
-    subject_id: "user-42",
+    subjectId: "user-42",
     source: "support-chat",
     type: "conversation",
     payload: { messages: [{ role: "user", content: "I prefer email over Slack." }] },
   },
   {
-    subject_id: "user-42",
+    subjectId: "user-42",
     source: "support-chat",
     type: "conversation",
     payload: { messages: [{ role: "user", content: "We had a billing issue last week." }] },
   },
 ]);
-console.log(`Batch ingested: ${result.episodes_created} episodes`);
+console.log(`Batch ingested: ${result.episodesCreated} episodes`);
 ```
 
 ---
@@ -201,7 +201,7 @@ for m in result.memories:
 
 ```typescript
 const result = await sw.compileMemories("user-42");
-console.log(`Compiled ${result.memories_created} memories:`);
+console.log(`Compiled ${result.memoriesCreated} memories:`);
 for (const m of result.memories) {
   console.log(`  [${m.kind}] ${m.content} (confidence: ${m.confidence})`);
 }
@@ -235,16 +235,16 @@ print(ctx.assembled_context)  # Ready to inject into an LLM prompt
 
 ```typescript
 const ctx = await sw.getContext({
-  subject_id: "user-42",
+  subjectId: "user-42",
   task: "Help the user with their billing question",
-  max_tokens: 2000,
+  maxTokens: 2000,
 });
 
-console.log(`Token estimate: ${ctx.token_estimate}`);
+console.log(`Token estimate: ${ctx.tokenEstimate}`);
 console.log(`Facts: ${ctx.facts.length}`);
 console.log(`Procedures: ${ctx.procedures.length}`);
 console.log();
-console.log(ctx.assembled_context); // Ready to inject into an LLM prompt
+console.log(ctx.assembledContext); // Ready to inject into an LLM prompt
 ```
 
 The `assembled_context` string is ready to paste into any LLM system prompt. Statewave ranks memories by:
@@ -292,7 +292,7 @@ for m in results.memories:
 **TypeScript:**
 
 ```typescript
-const results = await sw.searchMemories({ subject_id: "user-42", kind: "profile_fact" });
+const results = await sw.searchMemories({ subjectId: "user-42", kind: "profile_fact" });
 for (const m of results.memories) {
   console.log(`  ${m.content}`);
 }
@@ -315,7 +315,7 @@ print(f"Deleted {result.episodes_deleted} episodes, {result.memories_deleted} me
 
 ```typescript
 const result = await sw.deleteSubject("user-42");
-console.log(`Deleted ${result.episodes_deleted} episodes, ${result.memories_deleted} memories`);
+console.log(`Deleted ${result.episodesDeleted} episodes, ${result.memoriesDeleted} memories`);
 ```
 
 ---

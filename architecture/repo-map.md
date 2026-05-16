@@ -63,11 +63,11 @@ statewave/
 
 | Project | Tests | Framework |
 |---|---|---|
-| Server | 470+ | pytest + pytest-asyncio |
+| Server | 680 | pytest + pytest-asyncio |
 | `statewave` (Python SDK) | 34 | pytest |
 | `@statewavedev/sdk` (TypeScript SDK) | 23 | vitest |
 | `@statewavedev/connectors-*` | 297 | vitest |
-| Examples | 3 eval suites (54 assertions), 2 benchmarks | pytest |
+| Examples | 3 eval suites (55 assertions), 2 benchmarks | pytest |
 
 ## Available examples
 

@@ -7,7 +7,7 @@ Statewave is purpose-built for **support-agent workflows** — the first use cas
 ## v0.1 — Local MVP ✅
 
 - [x] Core domain model (Episode, Memory, ContextBundle)
-- [x] FastAPI server with all 6 endpoints
+- [x] FastAPI server with the core v1 endpoint surface
 - [x] Heuristic memory compiler
 - [x] Context assembly with token estimation
 - [x] PostgreSQL + pgvector schema
@@ -62,7 +62,7 @@ Statewave is purpose-built for **support-agent workflows** — the first use cas
 - [x] SLA tracking (response time, resolution time, breach flags)
 - [x] SLA integration into health + handoff
 - [x] Product website (statewave.ai)
-- [x] Proof layer: 3 eval suites (54 assertions), 2 benchmarks (9/9 vs 2/9)
+- [x] Proof layer: 3 eval suites (55 assertions), 2 benchmarks (8/8 vs 2/8)
 
 ---
 
